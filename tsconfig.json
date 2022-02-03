@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "noImplicitAny": true,
+    "outDir": "./build",
+    "allowJs": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["esNext"],
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "strictNullChecks": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts"
+  ]
+}

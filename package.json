@@ -1,0 +1,49 @@
+{
+  "name": "action-wrapped-run",
+  "version": "1.0.0",
+  "description": "GitHub Action to download the image from wrapped.run",
+  "private": true,
+  "author": {
+    "name": "Tien Duy NGUYEN",
+    "email": "tienduy.nguyen.dev@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Tien Duy NGUYEN",
+      "email": "tienduy.nguyen.dev@gmail.com"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts' --cache",
+    "build": "ncc build --out dist --target es2020 --license license.txt src/index.ts"
+  },
+  "main": "src/index.ts",
+  "repository": "github:tienduy-nguyen/action-wrapped-run",
+  "bugs": "https://github.com/tienduy-nguyen/action-wrapped-run/issues",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "jsdom": "^19.0.0",
+    "node-fetch": "^3.2.0",
+    "sharp": "^0.30.0",
+    "simple-git": "^3.1.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^16.2.14",
+    "@types/node": "^17.0.14",
+    "@types/node-fetch": "^3.0.3",
+    "@types/sharp": "^0.29.5",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "@vercel/ncc": "0.33.1",
+    "dotenv": "^16.0.0",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}

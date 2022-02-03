@@ -1,0 +1,39 @@
+name: '@tienduy-nguyen/wrapped'
+description: 'GitHub Action to download the image from wrapped.run'
+author: 'Tien-Duy NGUYEN'
+branding:
+  icon: user-check
+  color: gray-dark
+inputs:
+  wrapped_id:
+    description: 'The ID of the wrapped'
+    required: true
+
+  token:
+    description: GitHub Token used to commit the wrapped
+    default: ${{ github.token }}
+    required: false
+
+  commit_branch:
+    description: Branch used to commit the wrapped
+    default: ""
+    required: false
+
+  commit_message:
+    description: Commit message
+    default: Update ${filename}
+    required: false
+
+  commit_filename:
+    description: Filename to save wrapped to
+    default: wrapped.svg
+    required: false
+
+  dryrun:
+    description: 'If true, no changes will be made to the repo'
+    default: false
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/dailydotdev/action-wrapped:2.0.5'
